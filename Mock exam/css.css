@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --blue: rgb(1, 36, 186);
+  --green: rgb(9, 216, 98);
+  --dark: rgb(53, 53, 53);
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(images/17580.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerlogo {
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.headernav a {
+  color: var(--dark);
+  font-weight: 700;
+}
+.headernav ul {
+  display: flex;
+}
+.headernav li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+.aligncontainer {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  align-self: center;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  
+}
+.mainlefty {
+  width: 550px;
+}
+.leftysmall {
+  color: var(--green);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.leftybig {
+  color: var(--blue);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.mainicons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.iconstime {
+  width: 120px;
+}
+.iconscloud::before {
+  content: "\f0c2";
+  font-weight: bold;
+  position: relative;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  color: var(--green);
+  font-size: 2rem;
+}
+.iconsmoney::before {
+  content: "\f3d1";
+  font-weight: bold;
+  position: relative;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  color: var(--green);
+  font-size: 2rem;
+}
+.iconstime::before {
+  content: "\f2f2";
+  font-weight: bold;
+  position: relative;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  color: var(--green);
+  font-size: 2rem;
+}
+.mainrighty {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .23);
+  padding: 30px;
+}
+.rightyhead {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  padding-bottom: 30px;
+}
+.mainrightyform p {
+  font-size: 0.8rem;
+  color: var(--dark);
+  font-weight: 600;
+  margin-top: 12px;
+}
+input::placeholder {
+  font-size: 0.8rem;
+  color: rgba(224, 224, 224, 0.637);
+  font-weight: 600;
+  
+}
+.mainrightyform input {
+  border-style: none;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.637);
+  padding-top: 12px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+.onlybuttoninwholewebsite {
+  background-color: var(--green);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  padding: 20px 30px;
+  border-style: none;
+  border-radius: 8px;
+  margin-top: 40px;
+}
