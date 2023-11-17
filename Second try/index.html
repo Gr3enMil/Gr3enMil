@@ -5,28 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Shop</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="css.css">
-    
+    <link rel="stylesheet" href="scss/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <p class="logo">BestShop</p>
-            <nav class="nav">
-                <ol>
-                    <li><a href="#">WHY US</a></li>
-                    <li><a href="#">BENEFITS</a></li>
-                    <li><a href="#">PRICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ol>
-            </nav>
+            <div class="headerMenu">
+                <input class="checkbox" type="checkbox" id="menu-check">
+                <label class="menuLabel" for="menu-check">
+                    <!-- <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark" id="xxx"></i> -->
+                    <div class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <nav class="nav">
+                        <ol>
+                            <li><a href="#">WHY US</a></li>
+                            <li><a href="#">BENEFITS</a></li>
+                            <li><a href="#">PRICES</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ol>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="secfirst">
@@ -35,6 +47,7 @@
         <a class="secfirst-butt" href="#">Open your shop</a>
         <span class="secfrist-span">
             <img src="images/Background.png" alt="work" class="secfirst-img">
+            <img src="images/BackgroundSmall.png" alt="smallwork" class="smallImage">
         </span>
     </section>
     <section class="secsecond">
@@ -157,8 +170,10 @@
                 <p class="trademark">© 2019 BestShop LTD, All Rights Reserved</p>
             </div>
             <div class="footerrighty">
-                <a class="footerbutt twitter" href="https://twitter.com/?lang=cs"><img src="images/Twitter.svg" alt="twitter logo"></a>
-                <a class="footerbutt facebook" href="https://facebook.com/"><img src="images/Facebook.svg" alt="facebook logo"></a>
+                <a class="footerbutt twitter" href="https://twitter.com/?lang=cs"><img src="images/Twitter.svg"
+                        alt="twitter logo"></a>
+                <a class="footerbutt facebook" href="https://facebook.com/"><img src="images/Facebook.svg"
+                        alt="facebook logo"></a>
             </div>
         </div>
     </footer>

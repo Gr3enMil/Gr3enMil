@@ -1,0 +1,99 @@
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 8rem;
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+      gap:4rem;
+    }
+  }
+  .contacthead {
+    font-family: $raleFamily;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+  .contacttext {
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  .contactcontacts {
+    display: flex;
+    font-weight: 600;
+    color:#A5A5A5;
+    gap: 3rem;
+  }
+  .mail::before {
+    content: url(../images/Mail\ Icon.svg);
+    position: relative;
+    top: 0.5rem;
+    margin-right: 3px;
+  }
+  .phone::before {
+    content: url(../images/PhoneIcon.svg);
+    position: relative;
+    top: 0.5rem;
+    padding-right: 3px;
+  }
+  .contactright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .formname {
+    border-style: none;
+    border-bottom: 2px solid #A5A5A5;
+    width: 100%;
+    padding-top: 1.25rem;
+    margin-bottom: 3.25rem;
+  }
+  .contactbox .check {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .contactbox {
+    cursor: pointer;
+    display: flex;
+    max-width: 28rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #707070;
+    margin-bottom: 1.25rem;
+  }
+  .contactbox span {
+    height: 1.5rem;
+    width: 8rem;
+    border: 1px solid #95989A;
+    border-radius: 0.25rem ;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  .contactright p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #08A6E4;
+    letter-spacing: 3.28px;
+  }
+  .contactbox input:checked + span {
+    background-image: url(../images/Checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .contactbutt {
+    color:#FFFFFF;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #08A6E4;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 5px 10px 14px #07ACE629;
+    padding: 1.25rem 6rem;
+    margin-bottom: 3.5rem;
+    align-self: flex-end;
+  }

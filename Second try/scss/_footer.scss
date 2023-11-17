@@ -1,0 +1,39 @@
+.footercontainer {
+    @include desktop{
+    width: 84.5rem;
+    }
+    @include tablet{
+    width: 100%;
+    padding: 0 15px;
+    }
+    @include mobile{
+      width: 100%;
+      padding: 0 15px;
+      }
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerlefty .logo {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .trademark {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #A5A5A5;
+  }
+  .facebook {
+    margin-left: 1rem;
+  }
+  .footer {
+    box-shadow: 0px -5px 40px #00000029;
+  }
+  .footerrighty {
+    align-self: center;
+  }
+  .footerlefty {
+    padding-top: 1rem;
+  }

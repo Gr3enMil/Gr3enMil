@@ -1,0 +1,140 @@
+.header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 5;
+  }
+  .container {
+    @include desktop{
+      width: 84.5rem;
+      i{
+        display: none;
+      }
+      .menu{
+        display: none;
+      }
+    }
+    @include tablet{
+      width: 100%;
+      padding: 0 15px;
+      i{
+        display: none;
+      }
+      .menu{
+        display: none;
+      }
+    }
+    @include mobile{
+      width: 100%;
+      padding: 0 30px;
+    }
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    align-self: center;
+    font-family: $raleFamily;
+    font-size: 2rem;
+    font-weight: light;
+    color: #08A6E4;
+  }
+  .menu{
+    position: relative;
+    margin-top: 1.3rem;
+    span{
+      display: block;
+      background-color: #08A6E4;
+      border-radius: 2px;
+      height: 4px;
+      width: 2rem;
+      margin: 5px;
+    }
+  }
+  .nav {
+    display: flex;
+    @include mobile {
+      display: none;
+    }
+  }
+  ol {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    @include mobile{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 10rem;
+      width: 92vw;
+      background-color: white;
+      border: 1px solid rgb(231, 231, 231);
+      box-shadow: 3px 3px 6px #00000029;
+    }
+  }
+  ol a {
+    align-self: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #A5A5A5;
+    margin-left: 2.2rem;
+    padding: 1.8rem 0.6rem;
+    @include mobile{
+      padding-left: 0;
+    }
+  }
+  ol a:hover {
+    color: #000000;
+    border-bottom: 4px solid #08A6E4;
+    padding-bottom: 1.5rem;
+    @include mobile{
+      border-bottom: none;
+      padding-bottom: none;
+    }
+  }
+  /*.header{.fa-bars{
+    color: #08A6E4;
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+    top: 25%;
+  }
+  .fa-xmark{
+    color: #08A6E4;
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+    top: 25%;
+    display: none;
+  }} */
+  .headerMenu{
+    display: flex;
+    input {
+      display: none; 
+      &:checked~nav {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 4rem;
+          margin: 2rem;
+      }
+      &:checked~.menuLabel{
+
+        span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(3.5px, 9px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(3.5px, -9px);
+        }
+      }
+}
+    }   
+  }

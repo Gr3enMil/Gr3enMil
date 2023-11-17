@@ -1,0 +1,45 @@
+.secfirst {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 48rem;
+  }
+  .secfrist-span {
+    position: relative;
+    max-height: 27.5rem;
+  }
+  .secfirst-img {
+    width: 100%;
+    height: 32rem;
+    @include mobile{
+      display: none;
+    }
+  }
+  .smallImage{
+    width: 100%;
+    height: 32rem;
+    display: none;
+    @include mobile{
+      display: block;
+    }
+  }
+  .h1 {
+    font-family: $raleFamily;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .secfirst-text {
+    padding-top: 1.25rem;
+  }
+  .secfirst a {
+    font-weight: bold;
+    color: white;
+    background-color: #08A6E4;
+    border-radius: 2.5rem;
+    padding: 1.4rem 10rem;
+    box-shadow: 5px 10px 14px #07ACE629;
+    margin-top: 2.25rem;
+  }
+  

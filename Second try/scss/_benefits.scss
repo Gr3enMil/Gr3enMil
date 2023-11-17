@@ -1,0 +1,204 @@
+.benecontainer {
+    @include desktop{
+    width: 70rem;
+    }
+    @include tablet{
+    width: 100%;
+    padding: 0 35px;
+    }
+    @include mobile{
+      width: 100%;    
+      padding: 0 35px;
+    }
+    margin: 0 auto;
+  }
+  .benefits {
+    width: 100%;
+    background-color:#eceaea;
+    padding: 8rem 0;
+    @include mobile{
+      padding: 3rem 0;
+    }
+  }
+  .benerow {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 23rem;
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+      height: 30%;
+    }
+    &:first-of-type{
+    @include mobile{
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 30%;
+      position: relative;
+    }}
+  }
+  .beneheading {
+    font-family: $raleFamily;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1.9rem;
+    width: 15rem;
+  }
+  .benetext {
+    padding-bottom: 3rem;
+  }
+  .benelefty {
+    margin: 6rem 0;
+    width: 13.5rem;
+    position: relative;
+    @include mobile{
+      margin: 2rem 0 1rem 0;
+    }
+  }
+  .benelefty::after {
+    content: "";
+    width: 80%;
+    border: 2px solid #FB3B64;
+    position: absolute;
+    @include mobile{
+      display: none;
+    }
+  }
+  .benenotebook {
+    max-height: 219px;
+    margin-top: 7rem;
+    position: relative;
+    left: 9.5rem;
+    z-index: 1;
+    @include mobile{
+      left: 0;
+      top: 0;
+    }
+  }
+  .square {
+    position: relative;
+    right: 0.6rem;
+    top: 4rem;
+    width: 11rem;
+    height: 11rem;
+    background-color: #FB3B64;
+    transform: matrix(0.71, 0.71, -0.71, 0.71,0,0);
+    border-radius: 2.4rem;
+    @include mobile{
+      position: absolute;
+      left: 50%;
+    }
+  }
+  .benerow+.benerow {
+    margin: 2rem 0;
+    @include mobile{
+      position: relative;
+    }
+  }
+  .benerighty {
+    margin: 4.5rem 0;
+    width: 23.5rem;
+    position: relative;
+  }
+  .benerighty::after {
+    content: "";
+    width: 70%;
+    border: 2px solid #07ACE6;
+    position: absolute;
+    @include mobile{
+      display: none;
+    }
+  }
+  .circle {
+    position: relative;
+    left: 4.5rem;
+    top: 1rem;
+    width: 17.5rem;
+    height: 17.5rem;
+    background-color: #07ACE6;
+    border-radius: 50%;
+    @include mobile{
+      position: absolute;
+      left: 30%;
+      top: 7%;
+    }
+    @include smallMobile{
+      left: 20%;
+    }
+  }
+  .beneiphone {
+    max-height: 18rem;
+    max-width: 22rem;
+    position: relative;
+    left: -15rem;
+    top: 2rem;
+    z-index: 1;
+    @include mobile{
+      top:0;
+      left:0;
+      margin-top: 4rem;
+    }
+  }
+  .benethirdrow {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    @include mobile{
+      flex-direction: column;
+      gap:0;
+    }
+  }
+  .benethirdleft {
+    background-color: white;
+    height: 23rem;
+    @include desktop{
+    width: 40rem;
+    }
+    padding: 4rem 2rem 2.5rem 2rem;
+    position: relative;
+    @include mobile{
+      
+    }
+  }
+  .benethirdleft::after {
+    content: "";
+    width: 55%;
+    border: 2px solid #55DFB4;
+    position: absolute;
+    @include mobile{
+      display: none;
+    }
+  }
+  .benethirdleft .beneheading {
+    width: 22rem;
+  }
+  .benetrumpetbg {
+    background-color: #55DFB4;
+    width: 40%;
+    @include tablet{
+      width: 70%;
+    }
+    @include mobile{
+      width: 100%;
+      height: 20em;
+    }
+    @include desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    @include tablet{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    position: relative;
+    border: 1px solid #E8E9ED;
+    border-radius: 0.5rem;
+    .benetrumpet{
+      @include mobile{
+      width: 40%;
+      position: relative;
+      left: 30%;
+      top: 30%;}
+    }
+  }

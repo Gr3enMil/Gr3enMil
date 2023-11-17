@@ -1,0 +1,130 @@
+.pricing {
+    text-align: center;
+  }
+  .pricinghead {
+    font-family: $raleFamily;
+    font-size: 2rem;
+    margin-top: 7rem;
+    font-weight: 400;
+  }
+  .pricingcolumns {
+    display: flex;
+    margin: 3rem 11rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    @include mobile{
+      flex-direction: column;
+      margin: 3rem 1rem;
+    }
+  }
+  .pricingcolumn {
+    width: 33%;
+    min-width: 9rem;
+    max-width: 20rem;
+    height: 29rem;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    @include mobile{
+      width: 75%;
+      max-width: 75%;
+    }
+  }
+  .pricingsmallhead {
+    margin-top: 2rem;
+    font-family: $raleFamily;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #13253B;
+  }
+  .prize {
+    font-size: 3rem;
+    color: #FB3B64;
+    font-weight: light;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .pricingcolumntext {
+    letter-spacing: 0px;
+    margin-top: 1.25rem;
+    font-weight: 400;
+  }
+  .limited {
+    height: 1rem;
+    font-size: 0.8rem;
+    font-family: $raleFamily;
+    font-weight: bold;
+    color: #13253B;
+    margin-bottom: 3rem;
+  }
+  .pricingbutton {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background-color: #EB476E;
+    border-radius: 1.5rem;
+    padding: 1rem 3.5rem;
+    position: relative;
+    bottom: -5rem;
+  }
+  .pricingcolumnsecond {
+    border: 1px solid #07ACE6;
+    min-width: 10rem;
+    max-width: 21rem;
+    height: 31rem;
+    @include mobile{
+      width: 90%;
+      max-width: 90%;
+      box-shadow: 5px 10px 27px #07ACE629;
+    }
+  }
+  .pricingcolumnsecond a{
+    background-color: #07ACE6;
+  }
+  .pricingcolumnsecond .prize {
+    color: #07ACE6;
+  }
+  .pricingcolumnsecond .limited {
+    margin-bottom: 4rem;
+  }
+  .pricingcolumnsecond .pricingcolumntext {
+    margin-top: 1.5rem;
+  }
+  .pricingcolumnthird {
+    border: 1px solid #55DFB4;
+  }
+  .pricingcolumnthird a{
+    background-color: #55DFB4;
+  }
+  .pricingcolumnthird .prize {
+    color: #55DFB4;
+  }
+  .checked::before {
+    content: "";
+    background-image: url('../images/Checkmark.svg');
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    color: #55DFB4;
+    border: 1px solid #55DFB4;
+    border-radius: 2px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+  }
+  .unchecked::before {
+    content: "";
+    background-image: url(../images/milker_X_icon.svg);
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    color: #EB476E;
+    border: 1px solid #EB476E;
+    border-radius: 2px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+  } 
+  
